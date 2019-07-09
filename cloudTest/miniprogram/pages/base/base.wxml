@@ -1,0 +1,2 @@
+<image src="{{img}}"></image>
+<view class="msg">{{msg}}</view>

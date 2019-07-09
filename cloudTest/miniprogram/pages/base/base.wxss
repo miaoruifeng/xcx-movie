@@ -1,0 +1,8 @@
+image {
+    width: 200rpx;
+    height: 200rpx;
+    margin: 30rpx auto;
+}
+.msg {
+    text-align: center;
+}
