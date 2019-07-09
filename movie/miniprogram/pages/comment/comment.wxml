@@ -1,0 +1,28 @@
+<view>
+    <view class="detail-container" style="background: url({{detail.images.large}}) no-repeat  top/cover"></view>
+    <view class="detail-mask"></view>
+    <view class="detail-info">
+        <image class="detail-img" src="{{detail.images.large}}"></image>
+        <view class="detail">
+            <view class="detail-name">{{detail.title}}</view>
+            <view>{{detail.original_title}}</view>
+            <view class="detail-sorce">{{detail.rating.average}}分</view>
+            <view>
+                <text wx:for="{{detail.countries}}" wx:key="{{detail.id}}">{{item}} </text>
+                <text>/{{detail.durations[0]}}</text>
+            </view>
+            <view>导演：
+                <text wx:for="{{detail.directors}}" wx:key="{{detail.id}}">{{item.name}} </text>
+            </view>
+        </view>
+    </view>
+    <view class="desc">{{detail.summary}}</view>
+    <!-- 评价 -->
+    <van-field value="{{content}}" placeholder="写一些评价吧" bind:change="onContentChange" />
+    <van-rate value="{{score}}" bind:change="onScoreChange" />
+    <van-button type="warning" bindtap="uploadImg">上传图片</van-button>
+    <view>
+        <image class="comment-img" src="{{item}}" wx:for="{{images}}" wx:key="{{index}}"></image>
+    </view>
+    <van-button size="large" type="danger" bindtap="submit">提交评价</van-button>
+</view>

@@ -1,0 +1,36 @@
+.movie {
+    display: flex;
+    height: 280rpx;
+    padding: 10rpx;
+    border-bottom: 1px solid #ddd;
+}
+.movie-img {
+    width: 200rpx;
+    height: 100%;
+    margin-right: 20rpx;
+}
+.movie-info {
+    overflow: hidden;
+    flex: 1;
+    font-size: 24rpx;
+    color: #666;
+}
+.movie-info >view {
+    line-height: 40rpx;
+}
+.movie-title {
+    font-size: 32rpx;
+    color: #000;
+    margin-bottom: 8rpx;
+}
+.movie-score {
+    color: #faaf00;
+}
+.movie-comment {
+    height: 56rpx;
+    line-height: 56rpx;
+    background: #e54847;
+    font-size: 26rpx;
+    color: #fff;
+    margin-top: 110rpx;
+}
